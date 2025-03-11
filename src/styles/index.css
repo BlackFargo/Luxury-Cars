@@ -638,7 +638,7 @@ button {
   padding: 20px;
   max-width: 800px;
   width: 100%;
-  max-height: 85px;
+  max-height: 140px;
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.65);
   top: 0;
@@ -652,7 +652,6 @@ button {
   font-weight: 600;
   border: 2px solid var(--accent-color);
   display: none;
-  white-space: nowrap;
   text-align: center;
 }
 @media (max-width: 750px) {
