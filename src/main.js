@@ -232,4 +232,13 @@ window.addEventListener('resize', () => {
           search.placeholder = 'Write the product you are interested in'
     }
 })
+ 
+function updatePlaceholder() {
+   if(window.innerWidth < 375 ) {
+        search.placeholder = 'Interested car'
+    } else {
+          search.placeholder = 'Write the product you are interested in'
+    }
+}
 
+updatePlaceholder()
