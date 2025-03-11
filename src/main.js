@@ -108,7 +108,7 @@ function loadData() {
 		const { titles: updatedTitles, cards: updatedCards } = updateCardsList()
 		titles = updatedTitles
 		cards = updatedCards
-        console.log(cards)
+        
       
       
 		
@@ -120,7 +120,7 @@ function loadData() {
 			'<p class="error-message">Failed to load cars. Please try again later.</p>'
 	})
 }
-loadData(0, 4)
+loadData()
 
 cardsContainer.addEventListener('click', e => {
 	if (e.target.classList.contains('img')) {
