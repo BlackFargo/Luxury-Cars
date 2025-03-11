@@ -1,0 +1,22 @@
+$tablet: 750px;
+$mobile: 425px;
+
+@mixin tablet {
+	@media (max-width: $tablet) {
+		@content
+	}
+}
+@mixin mobile {
+	@media (max-width: $mobile) {
+		@content
+	}
+}
+@media (max-width: $tablet) {
+	.search h1 {
+		text-align: center;
+	}
+	.cards {
+		grid-template-columns: repeat(2, 1fr);
+		justify-content: center;
+	}
+}
