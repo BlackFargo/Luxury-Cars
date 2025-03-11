@@ -64,7 +64,7 @@ checkBoxesContainer.addEventListener('click', e => {
 })
 
 function loadData() {
-    fetch('/Cars/cars.json')
+    fetch('https://blackfargo.github.io/Luxury-Cars/cars.json')
 	.then(response => response.json())
 	.then(data => {
        
