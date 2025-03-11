@@ -18,9 +18,9 @@ const dialogImage = document.querySelector('#dialogImage')
 const dialog = document.querySelector('dialog')
 let titles = document.querySelectorAll('.card__title')
 let cards = document.querySelectorAll('.card')
-import {cardViewObserver, cardImgObserver} from './scripts/Features/scrollEvents.js'
+import {cardViewObserver, } from './scripts/Features/scrollEvents.js'
 import { addTextInMessage, deleteCarInMessage } from './scripts/Components/UI/message.js'
-
+// cardImgObserver
 const cartItems = JSON.parse(localStorage.getItem('Cars')) || {};
 
 console.log(cartItems)
@@ -102,7 +102,7 @@ function loadData() {
 		cards = document.querySelectorAll('.card')
         const images = document.querySelectorAll('.img')
         cards.forEach(card => cardViewObserver.observe(card))
-        images.forEach(card => cardImgObserver.observe(card))
+        // images.forEach(card => cardImgObserver.observe(card))
 		filterCardsByCheckbox(cards)
 
 		const { titles: updatedTitles, cards: updatedCards } = updateCardsList()
