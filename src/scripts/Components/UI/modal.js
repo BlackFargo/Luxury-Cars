@@ -1,11 +1,11 @@
 let scrollPos = 0
 
-export function scrollBlock() {
-	scrollPos = window.scrollY
-	document.body.style.position = 'fixed'
-	document.body.style.top = `-${scrollPos}px`
-	document.body.style.width = '100%'
-}
+// export function scrollBlock() {
+// 	scrollPos = window.scrollY
+// 	document.body.style.position = 'fixed'
+// 	document.body.style.top = `-${scrollPos}px`
+// 	document.body.style.width = '100%'
+// }
 
 export function returnScroll() {
 	document.body.style.position = ''
@@ -16,7 +16,7 @@ export function returnScroll() {
 
 export function openModal(dialogImage, dialog, src) {
 	dialogImage.setAttribute('src', '')
-	scrollBlock()
+	// scrollBlock()
 	dialogImage.setAttribute('src', src)
 	dialog.showModal()
 }
