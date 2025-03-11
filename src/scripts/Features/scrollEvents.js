@@ -8,8 +8,7 @@ export const cardViewObserver = new IntersectionObserver((entries, observer) => 
             }
         })	
 	}
-}
-,{threshold: 0.2})
+})
 
 export const cardImgObserver = new IntersectionObserver((entries, observer) => {
     	
@@ -21,4 +20,4 @@ export const cardImgObserver = new IntersectionObserver((entries, observer) => {
          }
         })
   
-},{threshold: 0.2})
+})
